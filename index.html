@@ -4,6 +4,30 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Aprende mate">
 	<title>Aprende matematicas bien </title>
+	<script type="text/javascript">
+		function Habilitar()
+		{
+			var c1 =document.getElementById("unoo");
+			var c2 =document.getElementById("2");
+			var c3 =document.getElementById("tres");
+			var c4 =document.getElementById("4");
+			var c5 =document.getElementById("5");
+			var c6 =document.getElementById("6");
+			var c7 =document.getElementById("7");
+			var c8 =document.getElementById("8");
+			var c9 =document.getElementById("9");
+			
+			var boton =document.getElementById("siguiente");
+
+			if (c1.value != 6 || c2.value != 12 || c3.value != 18 || c4.value != 24 || c5.value != 30 || c6.value != 36 || c7.value != 42 || c8.value != 48 || c9.value != 54) {
+				boton.disabled = true;
+			}
+			else{	
+				boton.disabled = false;	
+			}
+		}
+
+	</script>
 </head>
 <body >
 	<h1>Lee la tabla de multiplicar en voz alta</h1>
@@ -21,40 +45,124 @@
 	<label for="nombre" style="font-size:30px">6 x 9 = 54</label></br>
 	</fieldset>
      </BR>
-	<fieldset style="WIDTH: 150px; HEIGHT: 450px">
+	<fieldset style="WIDTH: 100px; HEIGHT: 400px" onkeyup="Habilitar()">
 		<LEGEND style="font-size:30px">Multiplica</LEGEND>
 	<label for="nombre" style="font-size:30px">6 x 1 = </label>
-	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="6" autocomplete="off" required>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" id="unoo" pattern="6" autocomplete="off" required >
 	</br>
 	<label for="nombre" style="font-size:30px">6 x 2 = </label>
-	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="12" autocomplete="off" required>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="12" autocomplete="off" required id="2" >
 	</br>
 	<label for="nombre" style="font-size:30px">6 x 3 = </label>
-	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="18" autocomplete="off" required>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="18" autocomplete="off" required id="tres">
 	</br>
 	<label for="nombre" style="font-size:30px">6 x 4 = </label>
-	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="24" autocomplete="off" required>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="24" autocomplete="off" required id="4">
 	</br>
 	<label for="nombre" style="font-size:30px">6 x 5 = </label>
-	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="30" autocomplete="off" required>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="30" autocomplete="off" required id="5">
 	</br>
 	<label for="nombre" style="font-size:30px">6 x 6 = </label>
-	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="36" autocomplete="off" required>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="36" autocomplete="off" required id="6">
 	</br>
 	<label for="nombre" style="font-size:30px">6 x 7 = </label>
-	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="42" autocomplete="off" required>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="42" autocomplete="off" required id="7">
 	</br>
 	<label for="nombre" style="font-size:30px">6 x 8 = </label>
-	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="48" autocomplete="off" required>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="48" autocomplete="off" required id="8">
 	</br>
 	<label for="nombre" style="font-size:30px">6 x 9 = </label>
-	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="54" autocomplete="off" required>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="54" autocomplete="off" required id="9">
+	</br>
+    </br></br>
+    </br></br>
+    </br>
+   <h1>Completa los espacios en blanco con los numeros correspondientes.</h1>
+	<fieldset style="WIDTH: 350px; HEIGHT: 120px">
+	<form action="">
+	<label for="nombre" style="font-size:30px">1. &nbsp; 6 - </label>
+	<label for="nombre" style="font-size:30px">12- </label>
+	<label for="nombre" style="font-size:30px">18- </label>
+	<label for="nombre" style="font-size:30px">24- </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="30" autocomplete="off" required id="10">
+	<label for="nombre" style="font-size:30px"> - </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="36" autocomplete="off" required id="11">
+	</br>
+	<label for="nombre" style="font-size:30px">2.   12 - </label>
+	<label for="nombre" style="font-size:30px">18- </label>
+	<label for="nombre" style="font-size:30px">24- </label>
+	<label for="nombre" style="font-size:30px">30- </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="36" autocomplete="off" required id="12">
+	<label for="nombre" style="font-size:30px"> - </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="42" autocomplete="off" required id="13">
+	</br>
+	<label for="nombre" style="font-size:30px">3.  18 - </label>
+	<label for="nombre" style="font-size:30px">24- </label>
+	<label for="nombre" style="font-size:30px">30- </label>
+	<label for="nombre" style="font-size:30px">36- </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="42" autocomplete="off" required id="14">
+	<label for="nombre" style="font-size:30px"> - </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="48" autocomplete="off" required id="15">
+	</br>
+	</fieldset>
+</br>
+
+	<fieldset style="WIDTH: 150px; HEIGHT: 730px">
+		<LEGEND style="font-size:30px">Multiplica</LEGEND>
+	<label for="nombre" style="font-size:30px">6 x 2 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="12" autocomplete="off" required id="16">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 3 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="18" autocomplete="off" required id="17">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 4 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="24" autocomplete="off" required id="18">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 5 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="30" autocomplete="off" required id="19">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 6 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="36" autocomplete="off" required id="20">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 7 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="42" autocomplete="off" required id="21">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 8 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="48" autocomplete="off" required id="22">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 9 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="54" autocomplete="off" required id="23">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 3 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="18" autocomplete="off" required id="24">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 5 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="30" autocomplete="off" required id="25">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 7 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="42" autocomplete="off" required id="26">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 9 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="54" autocomplete="off" required id="27">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 2 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="12" autocomplete="off" required id="28">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 4 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="24" autocomplete="off" required id="29">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 6 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="36" autocomplete="off" required id="30">
+	</br>
+	<label for="nombre" style="font-size:30px">6 x 8 = </label>
+	<input type="text" name="op1"style="WIDTH: 30px; HEIGHT: 30px" pattern="48" autocomplete="off" required id="31">
 	</br>
     </br>
     <center>
-	<input type="submit" value="EVALUAR">
+    	<input type="submit" value="Evaluar" >
+    </br>
+	<a href="C31B.html"><input type="button" value="Siguiente" id="siguiente"></a>
     </center>
 	</fieldset >
-	</form>
 </body>
 </html>
